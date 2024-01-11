@@ -27,7 +27,70 @@
 <script src="assets/js/html5shiv.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
+<style>
+    .container2 {
+  margin-top: 50px;
+}
 
+ .container2 .team .member img{
+   border-radius: 50%;
+ }
+.container2 .team {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.container2 .team .member {
+  width: 325px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  padding: 25px;
+}
+
+.container2 .team .member img {
+  width: 80px;
+}
+
+.container2 .team .member h3 {
+  color: #444;
+}
+
+.container2 .team .member span {
+  font-size: 12px;
+  color: #999;
+}
+
+.container2 .team .member p {
+  margin: 15px 0;
+  font-weight: 400;
+  color: #999;
+  font-size: 15px;
+  text-align: justify;
+}
+ 
+.container2 .team .member .btn a {
+  background: #ddd;
+  display: block;
+  float: right;
+  width: 125px;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 6px;
+  color: #444;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.container2 .team .member .btn a:hover {
+  background: #5a36dd;
+  color: #fff;
+}
+</style>
 <!-- Document Title
 ============================================= -->
 <title>Cosmic Global</title>
@@ -359,7 +422,58 @@
     <!-- .container end -->
 </section>
 <!-- #skills end -->
- 
+<!-- team strt  -->
+<section id="team" class="section feature feature-1 bg-white text-center">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+            <div class="heading ">
+                <h2 class="heading--title">Team</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+  
+        <div class="team">
+          <div class="member">
+            <img src="./assets//ayazahmed.jpeg" alt="member_image">
+            <h3>Ayaz Ahmed</h3>
+            <!-- <span>doe@gmail.com</span> -->
+            <p id="ayaz">Ayaz Ahmed is a seasoned and accomplished entrepreneur with a rich and varied background in the import and export, business growth, expansion strategy, business structure, manufacturing, trading businesses and finance. With over two decades of experience in the United Arab Emirates (UAE), Ayaz has firmly established himself as a key player in the business landscape.
+                <span id="ayaz-more" style="display: none;">
+                    He has successfully navigated the complexities of business, demonstrating a deep understanding of the market dynamics and global trade trends. His expertise extends beyond mere transactions, encompassing a holistic approach to business that includes strategic planning, market analysis, and risk management. His extensive knowledge and hands-on experience in different sectors have positioned him as a go-to expert, sought after for his insights into industry trends, regulatory landscapes, and emerging opportunities.His success can be attributed not only to his individual acumen but also to his ability to build and lead strong, professional teams. Recognizing the importance of collaboration and delegation, he has surrounded himself with talented team who share his vision and contribute to the overall success of his ventures. He believes that a cohesive and skilled team is the cornerstone of sustainable growth and innovation.
+                </span>    <button onclick="toggleReadMore('ayaz')">Read More</button>
+            </p>
+        
+          </div>
+          <div class="member">
+            <img src="./assets/rezana.jpeg" alt="member_image">
+            <h3>Rezana </h3>
+            <!-- <span>doe@gmail.com</span> -->
+            <p>Rezana is an Experienced finance manager with a proven track record in overseeing financial operations and optimizing processes. Expertise in budgeting, forecasting, and financial analysis. Adept at implementing cost-saving strategies and ensuring compliance with regulations. Strong leadership skills with a focus on driving financial success for organizations.</p>
+         </div>
+          <div class="member">
+            <img src="./assets/sampatkumar.jpeg" alt="member_image">
+            <h3>Sampat Kumar</h3>
+         
+            <p id="sampatText">Sampat Kumar has over three decades of global experience in all facets of Procurement across Manufacturing and EPC Project businesses. He has proven ability to strategically optimise procurement functions, enhance supplier relationships, and drive cross-functional collaboration towards cost-optimisation.<span id="sampatText-more" style="display: none;"> He has extensively worked in Steel making projects, Cable manufacturing, Aluminium projects & manufacturing, mining business, EPC business in power transmission & distribution, and EPC business in Construction industry. Previously, He has worked with Essar Steel, Sterlite Industries / Vedanta Resources, ArcelorMittal, KEC International Ltd and Global Greenbridge Contracting LLC.</span>
+                <button onclick="toggleReadMore('sampatText')">Read More</button>
+            </p>
+          
+          </div>
+          <div class="member">
+            <img src="./assets/linda.jpeg" alt="member_image">
+            <h3>Linda Tseng</h3>
+            <!-- <span>doe@gmail.com</span> -->
+            <p>Linda Tseng, a Beijing Foreign Studies University alumna, boasts over 20 years of international business expertise in the machinery industry. Known for her excellent communication and team collaboration, Linda's efficiency and strategic acumen have consistently driven success, making her an invaluable asset in navigating the complexities of the global marketplace.</p>
+         
+          </div>
+        </div>
+      </div>
+    <!-- .container end -->
+</section>
+<!-- team end  -->
+
+
 <!-- cta2 
 ============================================= -->
 <section id="cta2" class="section cta cta-2 bg-theme">
@@ -578,6 +692,20 @@
 
 <!-- Footer Scripts
 ============================================= -->
+<script>
+    function toggleReadMore(elementId) {
+      var dots = document.getElementById(elementId);
+      var moreText = document.getElementById(elementId + "-more");
+  
+      if (moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        // moreText.style.display = "none";
+      } else {
+        // dots.style.display = "none";
+        moreText.style.display = "none";
+      }
+    }
+  </script>
 <script src="assets/js/jquery-2.2.4.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/functions.js"></script>
